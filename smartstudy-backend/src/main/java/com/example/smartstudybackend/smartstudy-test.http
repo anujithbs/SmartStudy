@@ -1,0 +1,9 @@
+### Test clean validation error
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "This should fail validation",
+  "completed": false
+}
